@@ -1,0 +1,22 @@
+{
+  "run_id": "20260520_184122_train_mean",
+  "model": "train_mean",
+  "split_logged": "test",
+  "metadata": {
+    "method": "baseline",
+    "estimator": "mean"
+  },
+  "config": {
+    "target": "bmi",
+    "provided_split": true,
+    "validation": "GroupShuffleSplit by pair_id from train rows",
+    "global_mean": 32.53999363088604
+  },
+  "data": {
+    "train_rows": 2635,
+    "val_rows": 575,
+    "test_rows": 752,
+    "target_mean": 32.53999363088604,
+    "target_std": 8.035194502081033
+  }
+}
