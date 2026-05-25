@@ -1,0 +1,181 @@
+@font-face {
+    font-family: "UChicagoSansSerif-Regular";
+    font-style: normal;
+    font-stretch: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url(https://uchicago-brand-fonts.s3.us-east-2.amazonaws.com/fonts/uchicago-sans-serif/UChicagoSansSerif-Regular.woff2) format('woff2');
+}
+
+.stApp {
+    background: var(--uchicago-bg);
+    color: var(--uchicago-text);
+}
+
+.stAppHeader {
+    display: none;
+}
+
+.block-container {
+    max-width: 980px;
+    padding-top: 86px;
+    padding-bottom: 48px;
+}
+
+.uchicago-top-bar {
+    align-items: center;
+    background: var(--uchicago-maroon);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.14);
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+    left: 0;
+    padding: 0 22px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.uchicago-brand {
+    align-items: center;
+    color: #ffffff !important;
+    display: flex;
+    font-family: "UChicagoSansSerif-Regular", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1;
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+
+.uchicago-brand:before {
+    background: transparent url(https://d3qi0qp55mx5f5.cloudfront.net/shared-resources/i/template/phoenix.svg) 0 0 no-repeat;
+    background-size: 100%;
+    content: "";
+    display: inline-block;
+    height: 25px;
+    margin-right: 9px;
+    width: 30px;
+}
+
+.uchicago-app-label {
+    color: rgba(255, 255, 255, 0.86);
+    font-family: "UChicagoSansSerif-Regular", Arial, sans-serif;
+    font-size: 13px;
+}
+
+.bmi-hero {
+    border-bottom: 1px solid var(--uchicago-border);
+    margin-bottom: 24px;
+    padding-bottom: 22px;
+}
+
+.bmi-kicker {
+    color: var(--uchicago-maroon);
+    font-family: "UChicagoSansSerif-Regular", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.bmi-title {
+    color: var(--uchicago-text);
+    font-family: "UChicagoSansSerif-Regular", Arial, sans-serif;
+    font-size: 34px;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.bmi-subtitle {
+    color: var(--uchicago-muted);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+    max-width: 760px;
+}
+
+.stButton > button {
+    border-radius: 999px;
+    font-family: "UChicagoSansSerif-Regular", Arial, sans-serif;
+    min-height: 42px;
+}
+
+button[kind="primary"]:not(:disabled) {
+    background: var(--uchicago-maroon);
+    border-color: var(--uchicago-maroon);
+    color: #ffffff;
+}
+
+button[kind="primary"]:not(:disabled):hover {
+    background: var(--uchicago-maroon-hover);
+    border-color: var(--uchicago-maroon-hover);
+    color: #ffffff;
+}
+
+div[data-testid="stFileUploader"] section {
+    background: var(--uchicago-uploader);
+    border: 1px solid var(--uchicago-border);
+    border-radius: 8px;
+}
+
+div[data-testid="stMetric"] {
+    background: var(--uchicago-panel);
+    border: 1px solid var(--uchicago-border);
+    border-radius: 8px;
+    padding: 16px 18px;
+}
+
+div[data-testid="stMetricValue"] {
+    color: var(--uchicago-maroon);
+    font-family: "UChicagoSansSerif-Regular", Arial, sans-serif;
+}
+
+.result-meta {
+    color: var(--uchicago-muted);
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+div[data-testid="stFileUploader"],
+div[data-testid="stFileUploader"] label,
+div[data-testid="stCameraInput"] label,
+div[data-testid="stMarkdownContainer"],
+div[data-testid="stMetricLabel"] {
+    color: var(--uchicago-text);
+}
+
+div[data-testid="stAlert"] {
+    border-radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --uchicago-maroon: #a4343a;
+        --uchicago-maroon-hover: #8b1f25;
+        --uchicago-text: #f7f5f0;
+        --uchicago-border: #3c3630;
+        --uchicago-muted: #c9c0b7;
+        --uchicago-bg: #111111;
+        --uchicago-panel: #1b1a18;
+        --uchicago-uploader: #171614;
+    }
+}
+
+@media (max-width: 640px) {
+    .block-container {
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 78px;
+    }
+
+    .uchicago-app-label {
+        display: none;
+    }
+
+    .bmi-title {
+        font-size: 28px;
+    }
+}

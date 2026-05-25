@@ -1,0 +1,3 @@
+streamlit>=1.45.0
+requests>=2.31.0
+st-theme>=1.2.3
