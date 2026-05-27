@@ -70,7 +70,7 @@ def render_header() -> None:
             <h1 class="bmi-title">Real-time BMI Prediction</h1>
             <div class="bmi-subtitle">
                 Upload a face image or use the camera. The API extracts an ArcFace embedding
-                and reuses the loaded SVR model for low-latency BMI inference.
+                and reuses the loaded XGBoost model for low-latency BMI inference.
             </div>
         </section>
         """,
